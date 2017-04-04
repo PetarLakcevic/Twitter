@@ -1,22 +1,22 @@
 package com.twitter.poruke;
 /**
- * <li>Klasa koja predstavlja jednu twitter poruku sa njenim atributima (korisnik i tekst same poruke)
+ * Klasa koja predstavlja jednu twitter poruku sa njenim atributima (korisnik i tekst same poruke)
  * @version 1.0
  * @author Petar
  *
  */
 public class TwitterPoruka {
 	/**
-	 * <li>String koji predstavlja korisnika twittera
+	 * String koji predstavlja korisnika twittera
 	 */
 	private String korisnik;
 	/**
-	 * <li>String koji predstavlja poruku koji ce korisnik poslati
+	 * String koji predstavlja poruku koji ce korisnik poslati
 	 */
 	private String poruka;
 
 	/**
-	 * <li>Get metoda koja vraca korisnika
+	 * Get metoda koja vraca korisnika
 	 * 
 	 * @return String (korisnik)
 	 */
@@ -24,8 +24,8 @@ public class TwitterPoruka {
 		return korisnik;
 	}
 	/**
-	 * <li> Metoda koja postavlja korisnika
-	 * @param String koji sadrzi ime korisnika
+	 *  Metoda koja postavlja korisnika
+	 * @param korisnik - String koji predstavlja username korisnika koji pise poruku
 	 * @throws RuntimeException ako je uneti korisnik null ili prazan string
 	 */
 	public void setKorisnik(String korisnik) {
@@ -34,7 +34,7 @@ public class TwitterPoruka {
 		this.korisnik = korisnik;
 	}
 	/**
-	 * <li>Get metoda koja vraca poruku
+	 * Get metoda koja vraca poruku
 	 * 
 	 * @return String (poruka)
 	 */
@@ -42,8 +42,8 @@ public class TwitterPoruka {
 		return poruka;
 	}
 	/**
-	 * <li> Postavlja poruku
-	 * @param String (poruka)
+	 *  Postavlja poruku
+	 * @param poruka - String koji predstavlja tekst poruke
 	 * @throws RuntimeException ako je uneto null ili prazan string ili poruka duza od 140 karaktera kao poruka
 	 */
 	public void setPoruka(String poruka) {

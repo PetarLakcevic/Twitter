@@ -25,8 +25,8 @@ public class Twitter {
 	 * Unosenje nove poruke
 	 * 
 	 * 
-	 * @param korisnik (koji je napisao poruku)
-	 * @param poruka (tekst poruke)
+	 * @param korisnik - (topa String) koji je napisao poruku
+	 * @param poruka - (topa int) tekst poruke
 	 */
 	public void unesi(String korisnik, String poruka) {
 		// Pravi se nova poruka i puni podacima.
@@ -39,8 +39,8 @@ public class Twitter {
 	/**
 	 * Metoda koja vraca niz twitterporuka koje sadrzi odredjeni tag.
 	 * 
-	 * @param maxBroj (max broj poruka koje se ubacuju u niz)
-	 * @param tag (tag koji trazimo)
+	 * @param maxBroj - predtsavlja max broj (tipa int) poruka koje se ubacuju u niz
+	 * @param tag - predstavlja tag (tipa String) koji zahtevamo da postoji u datoj poruci
 	 * @return	Niz sa porukama
 	 * @throws RuntimeException ako su prekreseni uslovi da je tag == null ili empty
 	 */
@@ -68,4 +68,17 @@ public class Twitter {
 					break;
 		return rezultat;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		return super.equals(obj);
+	}
 }
+
+
+
+
+
+
+
+
