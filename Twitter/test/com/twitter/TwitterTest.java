@@ -29,11 +29,12 @@ public class TwitterTest {
 
 	@Test
 	public void testVratiSvePoruke() {
-		tp.setKorisnik("ja");
-		tp.setPoruka("poruka");
 		t.unesi("ja", "poruka");
+		t.unesi("Ja2", "poruka 2");
+		t.unesi("ja3", "poruka 3");
+		t.unesi("ja4", "poruka 4");
 		lista = t.vratiSvePoruke();
-		assertEquals(lista.get(0).toString(), tp.toString());
+		assertEquals(4,lista.size());
 	}
 
 	@Test
@@ -44,7 +45,6 @@ public class TwitterTest {
 		lista = t.vratiSvePoruke();
 		assertEquals(tp.toString(), lista.get(0).toString());
 	}
-
 	@Test
 	public void testVratiPoruke() {
 		t.vratiPoruke(0, "poruka");
